@@ -167,3 +167,79 @@ div.jacket img {
   background-color: #f1f1f1;
 }
 
+/* Adjust header layout for mobile devices */
+@media (max-width: 600px) {
+  header {
+    text-align: left; /* Align text to the left */
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  header img {
+    height: 80px; /* Adjust logo size */
+    width: 80px;
+  }
+
+  header h1 {
+    font-size: 50px; /* Adjust font size */
+  }
+
+  header h4.address {
+    font-size: 14px; /* Adjust address font size */
+    margin: 10px 0; /* Adjust margin */
+  }
+
+  nav.pages {
+    font-size: 20px; /* Adjust navigation font size */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .hamburger-menu {
+    right: 10px; /* Adjust position */
+    top: 10px;
+  }
+
+  .hamburger-btn {
+    height: 24px; /* Adjust button height */
+    font-size: 20px; /* Adjust font size */
+    padding: 0 12px; /* Adjust padding */
+  }
+}
+
+/* Adjust layout and styling for the last div in the body for mobile devices */
+@media (max-width: 600px) {
+  body > div:last-of-type {
+    padding: 10px; /* Add padding for better spacing */
+    text-align: left; /* Align text to the left */
+  }
+
+  body > div:last-of-type h2 {
+    font-size: 30px; /* Adjust font size */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  body > div:last-of-type h3 {
+    font-size: 24px; /* Adjust font size */
+    margin-top: 20px; /* Adjust top margin */
+    margin-bottom: 20px; /* Adjust bottom margin */
+  }
+
+  body > div:last-of-type p {
+    width: 100%; /* Make paragraphs full width */
+    font-size: 18px; /* Adjust font size */
+    margin-bottom: 15px; /* Adjust bottom margin */
+  }
+
+  body > div:last-of-type a {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  body > div:last-of-type p.about {
+    color: #A5A5A5;
+  }
+
+  body > div:last-of-type picture {
+    margin: 20px auto; /* Center the picture */
+    float: none; /* Remove float */
+  }
+}
+
