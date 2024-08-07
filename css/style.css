@@ -3,11 +3,7 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 header {
-  a {
-    color: white;
-    text-decoration: none;
-    margin: 20px;
-  }
+
   img {
     float: left;
     height: 120px;
@@ -16,12 +12,6 @@ header {
   color: white;
   text-align: center;
   background: #022FE2;
-}
-
-nav.pages {
-  padding: 20px;
-  background: black;
-  font-size: 25px;
 }
 
 h1 {
