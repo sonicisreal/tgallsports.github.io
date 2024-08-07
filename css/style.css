@@ -160,7 +160,6 @@ div.jacket img {
 /* Adjust header layout for mobile devices */
 @media (max-width: 600px) {
   header {
-    text-align: left; /* Align text to the left */
     padding: 10px; /* Add padding for better spacing */
   }
 
