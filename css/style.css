@@ -87,4 +87,83 @@ picture {
 small {
   font-size: 50%;
 }
+/* Center the gallery container */
+div.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px auto; /* Center the gallery */
+  max-width: 90%; /* Ensure the gallery does not exceed the screen width */
+
+}
+
+/* Add space between text and images in the gallery */
+div.jacket {
+  text-align: center;
+  font-size: 40px; /* Adjust the size as needed */
+
+}
+
+/* Make the borders of the images slightly rounded */
+div.jacket img {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Slightly round the borders */
+}
+
+/* Adjust gallery layout for mobile devices */
+@media (max-width: 600px) {
+  div.gallery {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 10px; /* Reduce gap between items */
+    margin: 10px auto; /* Center the gallery */
+  }
+
+  div.jacket {
+    font-size: 18px; /* Adjust font size for mobile */
+  }
+}
+
+/* Hamburger menu container */
+.hamburger-menu {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+/* Adjust the height of the hamburger button to match the address text */
+.hamburger-btn {
+  background-color: #022FE2;
+  color: white;
+  height: 30px; /* Match the height of the address text */
+  padding: 0 16px; /* Adjust padding to center the icon */
+  font-size: 24px; /* Adjust font size to fit within the height */
+  border: none;
+  cursor: pointer;
+}
+
+/* Hamburger content (hidden by default) */
+.hamburger-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the hamburger menu */
+.hamburger-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of hamburger links on hover */
+.hamburger-content a:hover {
+  background-color: #f1f1f1;
+}
 

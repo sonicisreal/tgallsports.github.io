@@ -27,28 +27,38 @@
 
   <!-- Add your site or application content here -->
   <header>
-
     <h4 class="address">
-
       1552 Highway 54 W, Fayetteville, Georgia 30214, United States | 770-876-1726
     </h4>
-    <nav class="pages">
-
-      
-
-      <a href="https://tgallsports.square.site/product/woodward-academy/16">Woodward Academy</a>
-      
-      <a href="https://tgallsports.chipply.com/sandycreekletterjacket/">Sandy Creek</a>
-
-    </nav>
-
-
     <h1>
       <img src="pics/logo.png" alt="logo">
-      T&ampG Allsports
+      T&amp;G Allsports
     </h1>
-
+    <nav class="pages">
+      <div class="hamburger-menu">
+        <button class="hamburger-btn">&#9776;</button>
+        <div class="hamburger-content">
+          <a href="https://tgallsports.square.site/product/woodward-academy/16">Woodward Academy</a>
+          <a href="https://tgallsports.chipply.com/sandycreekletterjacket/">Sandy Creek</a>
+        </div>
+      </div>
+    </nav>
   </header>
+
+  <div class="gallery">
+    <div class="jacket">
+      Woodward Academy
+      <a href="https://tgallsports.square.site/product/woodward-academy/16">
+        <img src="images/wwa.png" alt="wwa">
+      </a>
+    </div>
+    <div class="jacket">
+      Sandy Creek
+        <a href="https://tgallsports.chipply.com/sandycreekletterjacket/">
+            <img src="images/wwa.png" alt="sc">
+        </a>
+    </div>
+  </div>
 
   <div>
 
@@ -71,6 +81,29 @@
 
   </div>
 
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const hamburgerBtn = document.querySelector('.hamburger-btn');
+  const hamburgerContent = document.querySelector('.hamburger-content');
+
+  hamburgerBtn.addEventListener('click', function() {
+  if (hamburgerContent.style.display === 'block') {
+  hamburgerContent.style.display = 'none';
+  } else {
+  hamburgerContent.style.display = 'block';
+  }
+  });
+
+  // Close the menu if clicked outside
+  window.addEventListener('click', function(event) {
+  if (!event.target.matches('.hamburger-btn')) {
+  if (hamburgerContent.style.display === 'block') {
+  hamburgerContent.style.display = 'none';
+  }
+  }
+  });
+  });
+  </script>
 
 </body>
 
