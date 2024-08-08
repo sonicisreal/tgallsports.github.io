@@ -124,7 +124,7 @@ div.jacket img {
 
 /* Adjust the height of the hamburger button to match the address text */
 .hamburger-btn {
-  background-color: #022FE2;
+  background-color: #006EFF;
   color: white;
   height: 30px; /* Match the height of the address text */
   padding: 0 16px; /* Adjust padding to center the icon */
