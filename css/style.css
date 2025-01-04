@@ -2,6 +2,11 @@ html {
   background: black;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
 header {
 
   img {
