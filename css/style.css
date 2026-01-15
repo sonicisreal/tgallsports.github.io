@@ -184,5 +184,9 @@ div.senior img {
   div.senior {
     flex-direction: column; /* Stack items vertically */
   }
+  div.contact {
+    padding-left: 30px;
+  }
 }
+
 
